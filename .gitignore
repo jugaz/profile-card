@@ -12,13 +12,31 @@ yarn-debug.log*
 yarn-error.log*
 
 # Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
 *.njsproj
+*.ntvs*
+*.orig
 *.sln
+*.suo
 *.sw?
-public
-package-lock.json
+.*.swp
+._*
+.git
+.hg
+.idea
+.lock-wscript
+.npmrc
+.svn
+.vscode
+.wafpickle-*
+.wafpickle-N
+CVS
+/build
+config.gypi
 node_modules
+package-lock.json
+package-lock.json*
+public
+
+#Otros
+.pipe
+\\\\.\\pipe
