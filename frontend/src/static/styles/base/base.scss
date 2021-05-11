@@ -1,0 +1,18 @@
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: #19a2ae;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
