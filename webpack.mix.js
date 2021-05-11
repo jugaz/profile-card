@@ -20,13 +20,10 @@ mix_multiple('./frontend/src/static/styles/', "sass", "scss", "./docs/styles");
 
 mix
     .options({
-        processCssUrls: false,
-            hmrOptions: {
-        host: 'localhost',
-        port: 8080
-    }   
+        processCssUrls: false
+         
     })
-      .copyDirectory('./frontend/src/static/svg/', './docs/svg')
+    .copyDirectory('./frontend/src/static/svg/', './docs/svg')
     .copyDirectory('./frontend/src/static/images/', './docs/images')
     .pug('./frontend/src/templates/**/*.pug', './docs/',  {
         excludePath: __dirname+'/frontend/src/templates'
