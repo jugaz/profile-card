@@ -34,4 +34,13 @@ mix
     .setPublicPath('./docs/')
     .disableNotifications()
 
-    .browserSync('localhost:8080');
+    .browserSync({
+        proxy: false,
+        port:'8080',
+        server: {
+            baseDir: "./docs/",
+            serveStaticOptions: {
+                extensions: ["html,css"]
+            }
+        }
+    })
