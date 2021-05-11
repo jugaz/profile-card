@@ -1,10 +1,21 @@
-html.no-js
+html
     head
         block title
-            title Profile Card
+            title Jugaz | Profile Card
         meta(charset="utf-8")
         meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5 user-scalable=no')
+        meta(property='og:title' content='Jugaz | Profile Card')
+        meta(property='og:locale' content='en_PE')
+        meta(name='description' content='Jugaz | Profile Card')
+        meta(property='og:description' content='Jugaz | Profile Card')
+        meta(name='theme-color' content='#157878')
+        meta(property='og:url' content='https://jugaz.github.io/profile-card/')
+        meta(property='og:site_name' content='Jugaz | Profile Card')
+        link(rel='canonical' href='https://jugaz.github.io/profile-card/')
         link(rel='icon', type='image/png', sizes='32x32', href='./images/favicon-32x32.png')
+        block css
+            link(rel='stylesheet' href='./styles/index.css')
+
         block css
             link(rel='preload' as='style', href='styles/index.css')
             link(rel='stylesheet', href='styles/index.css')
