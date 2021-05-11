@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "cross-env": "^7.0.3",
     "fs": "0.0.1-security",
     "jquery": "^3.5.1",

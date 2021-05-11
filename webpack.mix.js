@@ -20,7 +20,11 @@ mix_multiple('./frontend/src/static/styles/', "sass", "scss", "./docs/styles");
 
 mix
     .options({
-        processCssUrls: false
+        processCssUrls: false,
+            hmrOptions: {
+        host: 'localhost',
+        port: 8080
+    }   
     })
       .copyDirectory('./frontend/src/static/svg/', './docs/svg')
     .copyDirectory('./frontend/src/static/images/', './docs/images')
@@ -28,4 +32,6 @@ mix
         excludePath: __dirname+'/frontend/src/templates'
 	})
     .setPublicPath('./docs/')
-    .disableNotifications();
+    .disableNotifications()
+
+    .browserSync('localhost:8080');
