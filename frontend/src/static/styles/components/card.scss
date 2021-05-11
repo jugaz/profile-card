@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     .container-top {
-        background: url("../../docs/svg/bg-pattern-top.svg");
+        background: url("../../svg/bg-pattern-top.svg");
 
         @media only screen and (min-width:800px) {
             left: -312px;
@@ -30,7 +30,7 @@
         }
     }
     .container-bottom {
-        background: url("../../docs/svg/bg-pattern-bottom.svg");
+        background: url("../../svg/bg-pattern-bottom.svg");
 
 
         @media only screen and (min-width:800px) {

@@ -1,1 +1,195 @@
-@import url(https://fonts.googleapis.com/css2?family=Girassol&display=swap);html *{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{background:#19a2ae;margin:0;overflow:hidden}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.container{width:100%}.container .container-top{background:url(../../docs/svg/bg-pattern-top.svg)}@media only screen and (min-width:800px){.container .container-top{left:-312px;top:-468px}}@media only screen and (max-width:799px){.container .container-top{left:-156px;top:-200px}}.container .container-bottom,.container .container-top{background-repeat:no-repeat;background-size:cover;opacity:.65;position:absolute}@media only screen and (min-width:800px){.container .container-bottom,.container .container-top{height:900px;width:900px}}@media only screen and (max-width:799px){.container .container-bottom,.container .container-top{height:450px;width:450px}}.container .container-bottom{background:url(../../docs/svg/bg-pattern-bottom.svg)}@media only screen and (min-width:800px){.container .container-bottom{right:-267px;top:260px}}@media only screen and (max-width:799px){.container .container-bottom{right:-133.5px;bottom:-130px}}.container .card{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;height:100%;font-family:Kumbh Sans,sans-serif;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;width:100%}.container .card,.container .card-container{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.container .card-container{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:400px;z-index:1}@media only screen and (max-width:799px){.container .card-container{width:270px}}@media only screen and (min-width:800px){.container .card-container{width:350px}}.container .card-container-header{-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start;background:url(../../docs/svg/bg-pattern-card.svg);border-radius:20px 20px 0 0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;height:140px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}.container .card-container-header img{margin-top:72px;border:4px solid #fff;border-radius:100px;z-index:1}.container .card-container-body,.container .card-container-footer{background:#fff}.container .card-container-body{padding-top:57px;padding-bottom:10px;text-align:center}.container .card-container-body h1{margin:0;display:inline-block;font-size:18px}.container .card-container-body span{margin-left:5px;font-weight:700;color:#969696}.container .card-container-body p{margin-top:10px;font-size:14px;color:#969696}.container .card-container-footer{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;border-radius:0 0 20px 20px;border-top:.5px solid #d6d1d1;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;padding:30px 0;text-align:center}.container .card-container-footer .item p{font-weight:bolder;margin:0}.container .card-container-footer .item span{color:#969696;font-size:12px}
+@import url(https://fonts.googleapis.com/css2?family=Girassol&display=swap);html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #19a2ae;
+  margin: 0;
+  overflow: hidden;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+.container .container-top {
+  background: url("../../svg/bg-pattern-top.svg");
+}
+@media only screen and (min-width: 800px) {
+  .container .container-top {
+    left: -312px;
+    top: -468px;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .container .container-top {
+    left: -156px;
+    top: -200px;
+  }
+}
+.container .container-top,
+.container .container-bottom {
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.65;
+  position: absolute;
+}
+@media only screen and (min-width: 800px) {
+  .container .container-top,
+.container .container-bottom {
+    height: 900px;
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .container .container-top,
+.container .container-bottom {
+    height: 450px;
+    width: 450px;
+  }
+}
+.container .container-bottom {
+  background: url("../../svg/bg-pattern-bottom.svg");
+}
+@media only screen and (min-width: 800px) {
+  .container .container-bottom {
+    right: -267px;
+    top: 260px;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .container .container-bottom {
+    right: -133.5px;
+    bottom: -130px;
+  }
+}
+.container .card {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.container .card-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  z-index: 1;
+}
+@media only screen and (max-width: 799px) {
+  .container .card-container {
+    width: 270px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .container .card-container {
+    width: 350px;
+  }
+}
+.container .card-container-header {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: url("../../docs/svg/bg-pattern-card.svg");
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .card-container-header img {
+  margin-top: 72px;
+  border: 4px solid #fff;
+  border-radius: 100px;
+  z-index: 1;
+}
+.container .card-container-body, .container .card-container-footer {
+  background: #ffff;
+}
+.container .card-container-body {
+  padding-top: 57px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.container .card-container-body h1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 18px;
+}
+.container .card-container-body span {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #969696;
+}
+.container .card-container-body p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #969696;
+}
+.container .card-container-footer {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 20px 20px;
+  border-top: 0.5px solid #d6d1d1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 30px 0;
+  text-align: center;
+}
+.container .card-container-footer .item p {
+  font-weight: bolder;
+  margin: 0;
+}
+.container .card-container-footer .item span {
+  color: #969696;
+  font-size: 12px;
+}
